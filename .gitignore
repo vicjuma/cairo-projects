@@ -1,0 +1,19 @@
+# Compiled files
+/target
+
+# Directory for editor backups and workspace settings
+/.vscode
+/.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Scarb's configuration file
+Scarb.lock
+
+# Ignore all log files
+*.log
+
+# Node modules folder for any JavaScript dependencies
+/node_modules
