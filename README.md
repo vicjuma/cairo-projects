@@ -138,3 +138,27 @@ __Moving__ a value simply means passing that value to another function.
 ## Cairo References
 
 1. ```consteval_int!``` is the macro for declaring a constant value requiring computation
+
+## Cairo Datatypes
+
+- Cairo is a statically typed language, which means that it must know the types
+of all variables at compile time.
+
+### Scalar Types
+
+- A scalar type represents a single value. Cairo has three primary scalar types: Its default type is a field element
+  
+1. felts
+2. integers
+3. booleans.
+
+- In Cairo, if you don't specify the type of a variable or argument, its type defaults to a field
+element, represented by the keyword felt252
+- integer types come with added security features that provide extra protection against potential vulnerabilities in the code, such as overflow and underflow checks
+- An integer is a number without a fractional component
+- So how do you know which type of integer to use? Try to estimate the max value your int ca have and choose the good size. The primary situation in which you’d use usize is when indexing some sort of collection.
+- usize is an alias for u32, intended for indexing collections and may have future compatibility with MLIR (Multi-Level Intermediate Representation).
+
+### String Types
+
+- There are short strings (felt252: single quotes) and byte arrays (double quotes)
