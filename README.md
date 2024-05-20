@@ -162,3 +162,18 @@ element, represented by the keyword felt252
 ### String Types
 
 - There are short strings (felt252: single quotes) and byte arrays (double quotes)
+
+## FUNCTIONS
+
+- Statements are instructions that perform some action and do not return a value.
+- Expressions evaluate to a resultant value. Let’s look at some examples.
+- An assignment operator does not evaluate to a value in Cairo as is in other languages. So the statement ```let y = 6``` cannot be written as ```let y = z = 6``` as is the case in other programming languages
+
+## CONDITIONALS
+
+- In Cairo, there is nothing like everything other than 0 is *true*, it must be explicitly a __boolean value__ for it to be correct.
+- Cairo doesn't support instantiating a bool from a numeric literal anyway - you can only use true or
+false to create a bool
+- Cairo prevents us from running program with infinite loops by including a gas meter
+- By setting a value to the --available-gas flag, we can set the maximum amount of gas available to the program
+- Gas is a unit of measurement that expresses the computation cost of an instruction. When the gas meter runs out, the program will stop
